@@ -111,3 +111,12 @@ h1 em,h2 em{font-weight:700}
 [hidden]{display:none!important}
 @media(max-width:900px){.video-page-hero{padding:72px 22px 55px}.video-page-content{padding:15px 22px 80px}.video-page-content .video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.video-page-content .video-grid{grid-template-columns:1fr}.archive-header>a:nth-child(3){display:none}}
+
+/* Vertical video watchlist */
+.video-page-content .video-grid{display:block;max-width:800px;margin:0 auto}
+.video-page-content .video-card{display:block;margin:0 0 56px;padding:0 0 56px;border:0;border-bottom:1px solid rgba(208,215,216,.28)}
+.video-page-content .video-card:last-child{margin-bottom:0;padding-bottom:0;border-bottom:0}
+.video-page-content .video-copy{padding:24px 2px 0}
+.video-page-content .video-copy h2{font-size:clamp(24px,3vw,34px)}
+.video-page-content .video-copy>p:last-child{display:block;max-width:680px;overflow:visible;font-size:14px;line-height:1.7;-webkit-line-clamp:unset}
+@media(max-width:560px){.video-page-content .video-card{margin-bottom:38px;padding-bottom:38px}.video-page-content .video-copy{padding-top:18px}}
